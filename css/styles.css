@@ -1,8 +1,44 @@
+/*@font-face{
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('EOT/SourceSansPro-ExtraLight.eot') format('embedded-opentype'),
+         url('WOFF2/TTF/SourceSansPro-ExtraLight.ttf.woff2') format('woff2'),
+         url('WOFF/OTF/SourceSansPro-ExtraLight.otf.woff') format('woff'),
+         url('OTF/SourceSansPro-ExtraLight.otf') format('opentype'),
+         url('TTF/SourceSansPro-ExtraLight.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('EOT/SourceSansPro-Light.eot') format('embedded-opentype'),
+         url('WOFF2/TTF/SourceSansPro-Light.ttf.woff2') format('woff2'),
+         url('WOFF/OTF/SourceSansPro-Light.otf.woff') format('woff'),
+         url('OTF/SourceSansPro-Light.otf') format('opentype'),
+         url('TTF/SourceSansPro-Light.ttf') format('truetype');
+}
+*/
+@font-face{
+    font-family: 'source sans pro';
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('fonts/EOT/SourceSansPro-Regular.eot') format('embedded-opentype'),
+         url('fonts/WOFF2/TTF/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+         url('fonts/WOFF/OTF/SourceSansPro-Regular.otf.woff') format('woff'),
+         url('fonts/OTF/SourceSansPro-Regular.otf') format('opentype'),
+         url('fonts/TTF/SourceSansPro-Regular.ttf') format('truetype');
+}
+
 /* CSS may need cleaning up */
 @charset "UTF-8";
 /* Body */
 body {
-	font-family: source-sans-pro, Consolas;
+	font-family: 'source sans pro', consolas;
 	background-color: #f2f2f2;
 	margin-top: 0px;
 	margin-right: 0px;
