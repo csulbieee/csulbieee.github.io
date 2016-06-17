@@ -1,4 +1,4 @@
-/* CSS may need cleaning up */
+/* CSS may need to cleaned up/split */
 @charset "UTF-8";
 /* Body */
 body {
@@ -197,7 +197,7 @@ a:link, a:visited{
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(../images/parallax.png);
+	/*background-image: url(../images/parallax.png);*/
 	height: 400px;
 	background-attachment: fixed;
 	background-size: cover;
@@ -265,6 +265,14 @@ footer .footer_column p {
 	font-weight: lighter;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+.footer_column a:link {
+	color: #717070;
+	text-decoration: none;
+}
+.footer_column a:visited {
+	color: #717070;
+	text-decoration: none;
 }
 .button {
 	width: 200px;
@@ -421,7 +429,7 @@ nav ul li {
 }
 .wrap {
 	width: 100%;
-	height: 310px;
+	height: 330px;
 	padding: 0;
 	overflow: hidden;
 }
