@@ -125,12 +125,12 @@ a:link, a:visited{
 	color: #FFFFFF;
 	text-align: left;
 	font-weight: bold;
-	letter spacing: 4px;
+	letter-spacing: 1px;
 	margin-left: 25px;
 	margin-bottom:10px;
 	display: inline-block;
-	line-height:normal;
-	vertical-align:middle;
+	line-height: normal;
+	vertical-align: middle;
 }
 .entry-banner {
 	background-color: #2D9AB7;
@@ -197,11 +197,7 @@ a:link, a:visited{
 /* Parallax Section */
 .banner {
 	background-color: #2D9AB7;
-	/*background-image: url(../images/parallax.png);*/
 	height: 400px;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .banner a:link {
 	color:#FFFFFF;
@@ -211,6 +207,14 @@ a:link, a:visited{
 	color:#FFFFFF;
 	text-decoration: none;
 }
+.banner img:first-child {
+	max-width: 100%;
+	max-height: 400px;
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	z-index: 1;
+}	
 .parallax {
 	color: #FFFFFF;
 	text-align: right;
@@ -218,6 +222,7 @@ a:link, a:visited{
 	padding-top: 110px;
 	letter-spacing: 2px;
 	margin-top: 0px;
+	position: relative;
 }
 .parallax_description {
 	color: #FFFFFF;
@@ -342,6 +347,9 @@ footer {
 .hidden {
 	display: none;
 }
+.flyer {
+	width: 100%;
+}
 
 /* --------------Mobile--------------*/
 @media (max-width: 320px) {
@@ -359,8 +367,10 @@ footer {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	width: 100%;
-	float: auto;
-	display: none;  /*---------------------------------*/
+	float: hidden;
+	overflow: auto;
+	display: inline-block;
+	background: #52bad5;
 }
 header nav ul {
 }
@@ -371,6 +381,8 @@ nav ul li {
 	margin-left: 0px;
 	width: 100%;
 	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 .text_column {
 	width: 100%;
@@ -417,6 +429,9 @@ nav ul li {
 	background-color: #2D9AB7;
 	background-image: none;
 }
+.banner img:first-child {
+	display: none;
+}	
 .tagline {
 	margin-top: 20px;
 	line-height: 22px;
@@ -526,6 +541,9 @@ nav ul li {
 	width: 100%;
 	text-align: center;
 }
+.banner img:first-child {
+	display: none;
+}
 .thumbnail {
 	width: 50%;
 }
@@ -618,5 +636,12 @@ nav ul li {
     -o-transform-origin: 0 0;
     -webkit-transform: scale(0.75);
     -webkit-transform-origin: 0 0;
+}
+}
+
+/* -------------Largest Desktops------------- */
+@media (min-width: 1300px) {
+.banner img:first-child {
+	left: 20%;
 }
 }
