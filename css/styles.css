@@ -135,10 +135,21 @@ a:link, a:visited{
 .entry-banner {
 	background-color: #2D9AB7;
 	width:100%;
-	height: 7%;
+	height: 70px;
 	float: left;
 	padding-bottom:0px;
 	padding-top:0px;
+	position: relative;
+}
+.entry-banner:before {
+	/*Cuts the corner of this div*/
+    content: '';
+    position: absolute;
+    bottom: 0;
+	right: 0;
+	border-bottom: 70px solid white;
+    border-left: 70px solid #2D9AB7;
+    width: 0;
 }
 .mugshot {
 	width: 50%;	
@@ -222,11 +233,12 @@ a:link, a:visited{
 	position:relative;
 }
 .parallax_right:before {
+	/*Cuts the corner of this div*/
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
 	right: 0;
-    border-top: 80px solid white;
+    border-bottom: 80px solid white;
     border-left: 80px solid #2D9AB7;
     width: 0;
 }
@@ -234,7 +246,7 @@ a:link, a:visited{
 	color: #FFFFFF;
 	text-align: right;
 	padding-right: 40%;
-	padding-top: 50px;
+	padding-top: 10%;
 	letter-spacing: 2px;
 	margin-top: 0px;
 	position: relative;
@@ -426,7 +438,7 @@ nav ul li {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: px;
-	padding-top: 40%;
+	padding-top: 5%;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
