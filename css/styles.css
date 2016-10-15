@@ -235,8 +235,8 @@ a:visited {
     background: #2D9AB7;
     position: relative;
 }
-.parallax_right:before {
-    /*Cuts the corner of this div*/
+/*.parallax_right:before {
+    /*Cuts the corner of this div
     
     content: '';
     position: absolute;
@@ -245,7 +245,7 @@ a:visited {
     border-bottom: 80px solid white;
     border-left: 80px solid #2D9AB7;
     width: 0;
-}
+}*/
 .parallax {
     color: #FFFFFF;
     text-align: right;
